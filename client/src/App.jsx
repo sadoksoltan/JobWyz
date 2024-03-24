@@ -18,27 +18,29 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/dashbord",
-    element: <DashboardLayout />,
-  },
-  {
-    path: "/about",
-    element: (
-      <div>
-        {" "}
-        <h1>about page</h1>
-      </div>
-    ),
+    children: [
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/dashbord",
+        element: <DashboardLayout />,
+      },
+      {
+        path: "/about",
+        element: (
+          <div>
+            {" "}
+            <h1>about page</h1>
+          </div>
+        ),
+      },
+    ],
   },
 ]);
 const App = () => {
