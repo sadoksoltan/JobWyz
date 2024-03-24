@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     element: <HomeLayout />,
     children: [
       {
+        index: true,
+        element: <Landing />,
+      },
+      {
         path: "register",
         element: <Register />,
       },
