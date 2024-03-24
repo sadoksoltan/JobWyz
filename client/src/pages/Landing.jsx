@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Wrapper from "../assets/wrappers/LandingPage";
 
 const Landing = () => {
   return (
-    <div>
-      <h1>landing pages</h1>
-    </div>
+    <Wrapper>
+      <nav></nav>
+    </Wrapper>
   );
 };
 
