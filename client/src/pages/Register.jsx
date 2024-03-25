@@ -1,26 +1,19 @@
-import React from "react";
-import { Logo } from "../components";
-import { Link } from "react-router-dom";
+import { Logo, FormRow } from "../components";
 import Wrapper from "../assets/wrappers/RegisterAndLoginPage";
+import { Link } from "react-router-dom";
+
 const Register = () => {
   return (
     <Wrapper>
       <form className="form">
         <Logo />
         <h4>Register</h4>
-        <div className="form-row">
-          <label htmlFor="name" className="form-label">
-            name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="form-input"
-            defaultValue="SADOK"
-            required
-          />
-        </div>
+        <FormRow type="text" name="name" />
+        <FormRow type="text" name="lastName" labelText="last name" />
+        <FormRow type="text" name="location" />
+        <FormRow type="email" name="email" />
+
+        <FormRow type="password" name="password" />
 
         <button type="submit" className="btn btn-block">
           submit
