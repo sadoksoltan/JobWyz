@@ -33,5 +33,4 @@ const Landing = () => {
     </Wrapper>
   );
 };
-
 export default Landing;
