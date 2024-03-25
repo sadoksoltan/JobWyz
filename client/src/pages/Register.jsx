@@ -17,7 +17,7 @@ const Register = () => {
             id="name"
             name="name"
             className="form-input"
-            defaultValue="john"
+            defaultValue="SADOK"
             required
           />
         </div>
