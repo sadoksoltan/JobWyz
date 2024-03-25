@@ -13,7 +13,6 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import Stats from "./pages/Stats";
-
 const router = createBrowserRouter([
   {
     path: "/",
