@@ -13,6 +13,13 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import Stats from "./pages/Stats";
+
+const checkDefaultTheme = () => {
+  const isDarkTheme = localStorage.getItem("darkTheme") === "true";
+  document.body.classList.toggle("dark-theme", isDarkTheme);
+  return isDarkTheme;
+};
+const isDarkThemeEnabled = checkDefaultTheme();
 const router = createBrowserRouter([
   {
     path: "/",
