@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "dashbord",
-        element: <DashboardLayout />,
+        element: <DashboardLayout isDarkThemeEnabled={isDarkThemeEnabled} />,
         children: [
           {
             index: true,

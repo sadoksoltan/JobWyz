@@ -9,7 +9,12 @@ const DashboardLayout = () => {
 
   const [showSidebar, setShowSidebar] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-
+  const checkDefaultTheme = () => {
+    const isDarkTheme = localStorage.getItem("darkTheme") === "true";
+    document.body.classList.toggle("dark-theme", isDarkTheme);
+    return isDarkTheme;
+  };
+  const isDarkThemeEnabled = checkDefaultTheme();
   const toggleDarkTheme = () => {
     const newDarkTheme = !isDarkTheme;
     setIsDarkTheme(newDarkTheme);
