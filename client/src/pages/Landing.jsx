@@ -13,7 +13,7 @@ const Landing = () => {
       <div className="container page">
         <div className="info">
           <h1>
-            job <span>traching</span> app
+            job <span>tracking</span> app
           </h1>
           <p>
             JobWyz is a ground-breaking platform that's transforming the

@@ -6,6 +6,18 @@ const app = express();
 import * as dotenv from "dotenv";
 dotenv.config();
 import userRouter from "./routes/userRouter.js";
+import cloudinary from "cloudinary";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import path from "path";
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_API_KEY,
+  api_secret: process.env.CLOUD_API_SECRET,
+});
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+app.use(express.static(path.resolve(__dirname, "./public")));
 
 import jobRouter from "./routes/jobRouter.js";
 import cookieParser from "cookie-parser";
