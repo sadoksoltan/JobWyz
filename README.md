@@ -10,8 +10,7 @@ Specific version information might be provided later.
 Project Structure:
 
 App.jsx: Main application component.
-src/pages: Contains various pages of the application.
-assets: Folder for project assets (favicon, CSS).
+src/pages and src/components: Contains various pages of the application.
 global styles: Defined in index.css.
 
 Setup Instructions:
