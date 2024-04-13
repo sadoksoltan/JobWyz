@@ -6,6 +6,7 @@ Getting Started:
 
 This project uses Create React App (https://ru.react.js.org/docs/create-a-new-react-app.html) with ReactJS and Node.js.
 Specific version information might be provided later.
+
 Project Structure:
 
 App.jsx: Main application component.
