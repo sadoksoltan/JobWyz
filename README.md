@@ -24,3 +24,5 @@ Running the Application:
 
 Start the development server: npm run dev
 Application will be accessible at http://localhost:5173/
+
+--->For any inquiries, please do not hesitate to contact me at "soltansadok3@gmail.com"
